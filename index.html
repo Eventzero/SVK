@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>STK - Statens Television</title>
+
+    <link rel="icon" type="image/x-icon" href="/media/SVKfavicon.png">
+</head>
+
+<body>
+
+    <button id="speechHelper">Aktivera lyssna</button>
+    <header>
+        <h1>SVK - Statens Television</h1>
+    </header>
+
+
+    <div class="program-form">
+        <p>Spara TV-Program genom formuläret nedan:</p>
+        <input type="text" id="titel" class="input-text-bar" required placeholder="Titel">
+        <input type="text" id="beskrivning" class="input-text-bar" required placeholder="Beskrivning">
+        <input type="number" id="åldersgräns" class="input-text-bar" required placeholder="Åldersgräns">
+
+        <div class="program-form-row">
+            <button class="program-button" onclick="saveData()">Spara Data</button>
+            <button class="program-button" onclick="displayData()">Visa Data</button>
+            <button class="program-button" onclick="clearData()">Rensa Data</button>
+        </div>
+
+        <div class="search-box">
+            <button class="button-search" onclick="searchData()"><i></i></button>
+            <input type="text" id="searchInput" class="input-search" placeholder="Skriv för Sök...">
+        </div>
+        <div id="result"></div>
+    </div>
+
+
+    <footer>
+        <p>© Statens Television</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
